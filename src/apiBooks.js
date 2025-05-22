@@ -7,7 +7,7 @@ export function getBooks() {
         .then((res) => res.json())
         .then((data) => {
             const { results } = data;
-            const book_details = results;
+            const book_details = results; 
             const newArr = book_details.map(
                 ({ book_details: [book_details] }) => {
                     const { title, author, publisher, primary_isbn13 } =
